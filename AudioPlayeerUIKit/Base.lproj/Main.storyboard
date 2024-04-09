@@ -84,6 +84,23 @@
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZV-VK-TvI">
+                                <rect key="frame" x="327" y="783" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqH-YN-dxF">
+                                <rect key="frame" x="210" y="784" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="timer" catalog="system"/>
+                                <connections>
+                                    <segue destination="vig-cU-Xp4" kind="show" id="ZSh-23-PNf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,14 +115,38 @@
             </objects>
             <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="w7J-9d-HpN">
+            <objects>
+                <viewController id="vig-cU-Xp4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VlS-Fn-ocz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acP-Is-DBY">
+                                <rect key="frame" x="0.0" y="299" width="393" height="163"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a8f-R4-uc7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jdO-xx-mL8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzq-ft-do1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.84732824427476" y="-2.1126760563380285"/>
+        </scene>
     </scenes>
     <resources>
         <image name="a341a6a9126d330227094fb6de48aa4b.1000x1000x1" width="1000" height="1000"/>
         <image name="backward.fill" catalog="system" width="128" height="77"/>
         <image name="forward.fill" catalog="system" width="128" height="77"/>
         <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="speaker.fill" catalog="system" width="128" height="125"/>
         <image name="speaker.wave.2.fill" catalog="system" width="128" height="88"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
